@@ -9,7 +9,30 @@
 
 // Write code here
 
-function name(params) {
-  
+// Method one
+// let img = isLandscape(12, 12);
+// console.log(img);
+
+// function isLandscape(width, height) {
+//   if (width > height) return true;
+//       return false;
+
+// }
+
+// Method two
+// let image = isLandscape(43, 30);
+// console.log(image);
+
+// function isLandscape(width, height) {
+//   return (width > height) ? true : false;
+// }
+
+
+// Method three
+let image3 = isLandscape(320, 220);
+console.log(image3);
+
+function isLandscape(width, height) {
+  return (width > height);
 }
 // End of code
