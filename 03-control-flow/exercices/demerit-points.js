@@ -16,22 +16,6 @@
 // Write code here
 
 function checkSpeed(speed) {
-  // let point = 0;
-  
-  // if (speed >= 75) {
-  //   point = point + 1;
-
-  //   return `Point: ${point}`;
-  // }
-
-  // if (speed < 75) {
-  //   return 'Ok';
-  // }
-
-  // while (speed >= 75) {
-  //   point = point + 1;
-  //   break;
-  // }
   
   const speedLimit = 70;
   const kmPerPoint = 5;
