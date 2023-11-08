@@ -38,17 +38,20 @@ function checkSpeed(speed) {
 
   if (speed < speedLimit + kmPerPoint) {
     console.log('Ok');
-  } else {
-    const points = Math.floor((speed - speedLimit) / kmPerPoint);
-    console.log('Point:', points);
-
-    if (points >= 12) {
-      console.log('Lincese suspended.')
-    }
+    return;
   }
+
+  const points = Math.floor((speed - speedLimit) / kmPerPoint);
+  // console.log('Point:', points);
+  if (points >= 12) {
+    console.log('Lincese suspended.')
+  } else {
+    console.log('Points:', points);
+  }
+
 
   
 }
 
-console.log(checkSpeed(900));
+console.log(checkSpeed(130));
 // End of code
