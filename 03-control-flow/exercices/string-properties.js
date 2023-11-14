@@ -14,12 +14,9 @@
 
 function showProperties(obj) {
 
-  for (let property in obj) {
+  for (let property in obj) 
       if (typeof obj[property] === 'string')
- 
       console.log(property, obj[property]);
-  }
-
 }
 
 
