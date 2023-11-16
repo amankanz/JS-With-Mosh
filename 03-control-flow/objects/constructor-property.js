@@ -20,7 +20,13 @@ console.log(another.constructor);
 console.log(circle.constructor);
 
 // when using this syntax
-let x = {};
+let x = {}; // , JS will translate it to something like this let x = new Object();
+
+// Other JS built-in constructor
+new String(); // '', "", `` (string literals)
+new Boolean(); // true, false
+new Number(); // 1, 2, 3,.... 
+
 
 
 
