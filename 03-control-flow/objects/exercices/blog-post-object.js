@@ -31,4 +31,23 @@ const showBlogPost = ( object) => {
 }
 
 showBlogPost(blogPost);
+
+// Corresction
+const post = {
+  title: 'a',
+  body: 'b',
+  author: 'c',
+  views: 100,
+  comment: [
+    {
+      comment: 'd',
+      author: 'e'
+    },
+    {
+      comment: 'f',
+      author: 'g'
+    }
+  ],
+  isLive: true
+}
 // End of the code
