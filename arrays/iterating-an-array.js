@@ -13,6 +13,7 @@ const numbers = [1, 2, 3];
 // The callback function passed to the forEach() method
 // can optionaly take a second parameter
 // that's the index
+// we can't get the index with forOf loop.
 numbers.forEach((number, index) => console.log(index, number));
 
 
