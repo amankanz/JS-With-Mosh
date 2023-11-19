@@ -29,3 +29,6 @@ const numbers = [1, -1, 2, 3];
 const atLeastOnePositive = numbers.some(value => {return value >= 0});
 
 console.log(atLeastOnePositive);
+
+// every(), checks to see if every element in a given array matches our criteria
+// some(), checks to see if we have atleast one element that matches the given criteria
