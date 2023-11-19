@@ -20,7 +20,7 @@ console.log(parts);
 // Now, we have an array use the join() method
 // to combine the element in the array parts
 // to combine these element using a separator
-const combined = parts.join('-');
+const combined = parts.join('-'); // useful in creatinf URL slug
 
 console.log(combined);
 
