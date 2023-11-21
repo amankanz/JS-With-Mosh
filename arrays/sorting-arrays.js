@@ -15,7 +15,7 @@
 
 // these two method when having numbers and strings in the array.
 
-// Haning Objects in the array
+// Having Objects in the array
 // Set this array by the name of course
 // let's Js come first
 const courses = [
