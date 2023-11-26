@@ -47,7 +47,7 @@
 
 
 // Last Example
-// Method one
+// Method one using arrow function
 // const video = {
 //   title: 'Angel has Fallen',
 //   tags: ['a', 'b', 'c'],
@@ -59,7 +59,7 @@
 
 // video.showTags();
 
-// Method two
+// Method two using regular function
 const video = {
   title: 'Angel has Fallen',
   tags: ['a', 'b', 'c'],
