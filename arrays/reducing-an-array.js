@@ -1,7 +1,7 @@
 
 const numbers = [1, -1, 2, 3];
 
-// calculate the sum of numbers inthe numbers array
+// calculate the sum of numbers in the numbers array
 // let sum = 0;
 // for (const number of numbers) 
 //   sum += number;
