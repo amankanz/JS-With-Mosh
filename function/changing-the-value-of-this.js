@@ -78,4 +78,5 @@ video.showTags()
 // 3 ways to change the value of this
 // Using the self appraoch
 // Using the bind()
+// Using an arrow function (Modern Appraoch)
 
