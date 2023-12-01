@@ -18,8 +18,8 @@ const circle = createCircle(1);
 //In jS we don't have the concept of classes
 function Circle(radius) {
   /**
-   * Naming convention the first letter should be uppercase
-   * Use the 'this' keyword to set the propwerty of this object
+   * Naming convention the first letter should be uppercase 'Circle'
+   * Use the 'this' keyword to set the property of this object
    * 'this' is basically a reference to the object that
    * is executing this piece of code  
    */
@@ -35,8 +35,8 @@ const another = new Circle(1); // using the new operator to call the Circle func
 
 /**
  * Imagine we have a new empty object in memory, now
- * we are using 'this' reference that object.
- * and then use that dot nation to set various property
+ * we are using 'this' reference to that object.
+ * and then use that dot-nation to set various property
  * of that onject.  
  * 
  * When use the 'new' operator a few using happen
@@ -45,14 +45,14 @@ const another = new Circle(1); // using the new operator to call the Circle func
  * Because by default 'this' point to the global object
  * 
  * In the browser the globalobject is the window object
- * In Node the global object is global
+ * In Node the global object is Global
  */
 
 /**
  * NB: when use the 'new' operator to call a fucntion
  * three thrings happen:
- * 'new' operator will create an empty object
- * then it sets 'this' keyword to point to the object
+ * 'new' operator will create an empty object '{}'
+ * then it sets 'this' keyword to point to the that object
  * finally it will return that object from the constructor function
  * 
  * If we return an object in a function we refer to that
