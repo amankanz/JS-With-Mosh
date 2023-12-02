@@ -1,8 +1,6 @@
 
-/**
- * Functions are objects
- * 
- */
+// Functions are objects
+
 function Circle(radius) {
   this.radius = radius;
   this.draw = function() {
@@ -16,7 +14,7 @@ function Circle(radius) {
 
 /**
  * Every object has a property that references the cunstructor function
- * that was used to creare an object
+ * that was used to create an object
  */
 // console.log(Circle.constructor); // returns the built-in constructor called 'function Function() {}'
 
@@ -53,13 +51,13 @@ Circle.call({}, 1); // with call(), we can call a function
  * and passes it as 1st argument to the call() method
  * and this object will determine the context for 'this' keyword will
  * reference the '{}' passed as 1st argument of the call() method
- * the 1sr argument of the call() method specifies the target of 'this'
+ * the 1st argument of the call() method specifies the target of 'this'
  */  
 
 Circle.apply({}, 1);
 /**
  * exaclty as the call() method, we can call a function
- * but instead of passinf all the elements explicitly, we passe them in an array
+ * but instead of passing all the elements explicitly, we passe them in an array
  * this is usefull, if you want to pass an array as a second argument
  * to the apply() method 
  */
