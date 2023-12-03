@@ -103,3 +103,9 @@ console.log(obj); // output: { value: 11 }
  * 
  * Any changes made to the object will be visible to the other variable. 
  */
+
+/**
+ * TAKE AWAY:
+ * Premitives are copied by their value.
+ * Reference types or Objects are copied by their reference.
+ */
