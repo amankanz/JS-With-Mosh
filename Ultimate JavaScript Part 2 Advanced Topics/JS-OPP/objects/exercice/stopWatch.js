@@ -8,7 +8,7 @@
  * 
  * other members are inherited from the base object.
  * 
- * Initially duractionis 0, we can start() the stopwatch
+ * Initially duraction is 0, we can start() the stopwatch
  * If we call start() again it will thro an error 'Stopwatch has already started.'
  * NOw, we can call stop(), we can not call stop() in a roll it will throw an error
  * 'Stopwatch is not started.'
@@ -26,5 +26,78 @@
 
 // Start of code
 // Time required 30 minutes
+
+/**
+ * Pseudocode:
+ *  Declare a constructor function named Stopwatch () {}
+ *  the construct has private and publich members:
+ *  private members:
+ *  initialize variables 0:
+ *    startTime, endTime and duration
+ *    running to false
+ * 
+ *  public members:
+ *   create a method start(), end() and reset()
+ * 
+ * Method start() and end() should have a check validation
+ * In start()
+ *   if running flag an erro else set running to true
+ * In stop()
+ *  if not running flag an erro else set running to false
+ * create a variable second to store the time taken from star() to end()
+ * 
+ * re-initialize duration to seconds; 
+ * 
+ * Inside the reset()
+ * re-initialize varible startTime, endTime and duration to 0
+ * and set running to false.
+ * 
+ * Make the duration variable a readOnly property.
+ */
+
+// Constructor function
+function Stopwatch() {
+  let startTime, endTime, duraction = 0;
+  let running = false;
+
+  // Public members
+  this.start = () => {
+    // validation check
+    if(running)
+      throw Error('Stopwatch has already started.');
+    running = true; // otherwise set running to true
+
+    startTime = new Date(); // set current date time
+  }
+
+  this.stop = () => {
+    // validation check
+    if(!running)
+      throw Error('Stopwatch is not started.');
+    running = false;
+
+    endTime = new Date();
+
+    // Calcualte the endTime and startTime in seconds
+    const seconds = (endTime.getTime() - startTime.getTime()) / 1000;
+    duraction += seconds;
+  }
+
+  // reset
+  this.reset = () => {
+    startTime = 0;
+    endTime = 0;
+    duraction = 0;
+    running = false;
+  }
+
+  // Make the duraction property a readOnly property
+  Object.defineProperty(this, 'duration', {
+    get: () => duraction
+  })
+
+
+}
+
 
 // End of code
