@@ -56,7 +56,7 @@ So in OOP, we group related variables, and functions that oprate on them into ob
  Inheritance helps us eliminate redudant code.
 
  ## Polymorphism
- Poly means many and morph means form. So polymorphism means many forms. In OPP polymorphism is a techniw that allows us to get rid of long if-else pr switch and case statements. 
+ Poly means many and morph means form. So polymorphism means many forms. In OOP polymorphism is a techniw that allows us to get rid of long if-else or switch and case statements. 
 
  Back to the html element example: All those objects(textboxes, dropdown list, checkboxes,...) should have the ability to be rendered on the page. But the way each object is rendered is different from the others. 
 
@@ -83,3 +83,4 @@ So in OOP, we group related variables, and functions that oprate on them into ob
  We can refactor ugly switch and case statements.   
 
 
+ 
