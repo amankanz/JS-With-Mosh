@@ -20,8 +20,8 @@
  * IMPORTANT:
  * This HTMLSelectElement inherits from HTMLElement
  * when inspect its prototype, this prototype is an instance of HTMLElement Object
- * Remember our HTMLElement Object has two methods click() whick is an instance or own method
- * and the other is focus() which is a prototype method.
+//  * Remember our HTMLElement Object has two methods click() whick is an instance or own method
+//  * and the other is focus() which is a prototype method.
  * 
  * Do not use the extend() fuction we created earlier in class, we must manually
  * set the prototype for HTMLSelectElement, you should that to an instance of 
@@ -34,5 +34,101 @@
  */
 
 // Start of code
+// Pseudo code
+    // COMPOSITION STYLE
+    // create two objects HTMLSelectElement and HTMLElement
+    // Declare a click() method in HTMLSelectElement and
+    // focus() method inside the HTMLElement
+    // define a const 'e' set it to new HTMLElement
+    // 
+    // Define a constuctor HTMLSelectEment which can receive a varies number of 
+    // arguments 
+    // Create items property inside of the HTMLSelectElement
+    // items is initialize to an empty array.
+    // create two methods addItem() and removeItem()
+    // with the addItem() we can add element at the end of items array
+    // with the removeItem() we can remove items at the end of the array
+    
+// === SOLUTION 01 ===
 
+//   const htmlElement = {
+//     focus: function () {
+//       console.log('focusing');
+//     }
+//   };
+
+//   const htmlSelectElement = {
+//   }; 
+  
+//   // HTML Constructor
+//   function HTMLElement() {
+//     this.click = function () {
+//       console.log('clicking');
+//     };
+//   }
+
+//   // HTMLSelectElement constructor
+//   function HTMLSelectElement(...items) {
+//     this.items = [...items];
+
+//     this.addItem = function (item) {
+//       this.items.push(item);
+//     };
+
+//     this.removeItem = function (item) {
+//       this.items.pop(item);
+//     };
+//   }
+
+// function mixin(target, ...sources) {
+//   Object.assign(target, ...sources)
+// }
+// mixin(HTMLElement.prototype, htmlElement);
+
+// const e = new HTMLElement();
+
+// // Prototypical Inheritance
+// HTMLSelectElement.prototype = Object.create(HTMLElement.prototype);
+// HTMLSelectElement.prototype.constructor = HTMLSelectElement;
+
+// // Method Overriding
+// HTMLSelectElement.prototype.click = function () {
+//   HTMLElement.prototype.click.call(this);
+// }
+
+// const s = new HTMLSelectElement();
+
+// === SOLUTION 02 ===
+
+// HTMLElement constructor
+// Parent object
+function HTMLElement() {
+  this.click = function () {
+    console.log('clicked');
+  }
+}
+
+HTMLElement.prototype.focus = function () {
+  console.log('focused');
+}
+
+const e = new HTMLElement(); // Defined a new HTMLElement object
+
+// HTMLSelectElement constructor
+function HTMLSelectElement(items = []) {
+  this.items = items; // The argument ES6 Style
+
+  this.addItem = function (item) {
+    this.items.push(item);
+  }
+
+  this.removeItem = function (item) {
+    this.items.splice(item.indexOf(item), 1);
+  }
+}
+
+HTMLSelectElement.prototype = new HTMLElement();
+HTMLSelectElement.prototype.constructor = HTMLSelectElement;
+
+const s = new HTMLSelectElement();
 // End of code

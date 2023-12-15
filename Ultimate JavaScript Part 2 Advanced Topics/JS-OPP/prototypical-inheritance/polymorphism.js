@@ -23,7 +23,7 @@ Circle.prototype.duplicate = function () {
   console.log('duplicate circle');
 }
 
-// Define a constructor Shape
+// Define a constructor Square
 function Square() {
 }
 
