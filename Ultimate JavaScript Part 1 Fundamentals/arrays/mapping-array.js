@@ -15,7 +15,7 @@ const filtered = numbers.filter(number => number >= 0);
 // const items = filtered.map(number => '<li>' + number + '</li>');
 // console.log(items);
 
-// use the join() method to join this array items and create a string
+// // use the join() method to join this array items and create a string
 // const html = '<ul>' + items.join('') + '</ul>';
 
 // console.log(html);
@@ -31,14 +31,23 @@ const filtered = numbers.filter(number => number >= 0);
 // chaining
 // calling one method, which return a result,
 //  now we're immediately calling the map method on that result. 
-const items = numbers
-  .filter(number => number >= 0)
-  .map(number => ({value: number})) // returns a new array
-  // call the filter() on that array
-  .filter(obj => obj.value > 1) // new array
-  // call the map() on that array
-  // mapping to a number
-  .map(obj => obj.value);
+// const items = numbers
+//   .filter(number => number >= 0)
+//   .map(number => ({value: number})) // returns a new array
+//   // call the filter() on that array
+//   .filter(obj => obj.value > 1) // new array
+//   // call the map() on that array
+//   // mapping to a number
+//   .map(obj => obj.value);
 
-console.log(items);
+// console.log(items);
 
+// === CODEWARS Kata ===
+// == Method 2 solved using mapping-array
+const array = [['white', 'goodness'], ['bleu', 'peace'], ['red', 'influence'], ['Green', 'nature']];
+
+function colourAssociation(array) {
+  return array.map(element => ({[element[0]]: element[1]}));
+}
+
+console.log(colourAssociation(array));

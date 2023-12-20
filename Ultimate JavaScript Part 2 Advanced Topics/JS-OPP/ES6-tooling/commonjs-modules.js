@@ -1,18 +1,10 @@
 
-// Private property
-const _radius = new WeakMap();
+// Import the circel Module
+// we use the require() function with a realtive path to te module
+// as an argument
+const Circle = require('./modularity/circle')
 
-// Circle class
-class Circle {
-  constructor(radius) {
-    _radius.set(this, radius);
-  }
-
-  draw() {
-    console.log('Circle with radius ' + _radius.get(this));
-  }
-}
 
 const c = new Circle(10);
-console.log(_radius.get(c));
+// console.log(_radius.get(c));
 c.draw();
