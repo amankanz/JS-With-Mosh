@@ -14,7 +14,23 @@ const numbers = [1, 2, 3];
 // can optionaly take a second parameter
 // that's the index
 // we can't get the index with forOf loop.
-numbers.forEach((number, index) => console.log(index, number));
+// numbers.forEach((number, index) => console.log(index, number));
+
+const list1 = [
+  { firstName: 'Noah', lastName: 'M.', country: 'Switzerland', continent: 'Europe', age: 19, language: 'JavaScript' },
+  { firstName: 'Maia', lastName: 'S.', country: 'Tahiti', continent: 'Oceania', age: 28, language: 'JavaScript' },
+  { firstName: 'Shufen', lastName: 'L.', country: 'Taiwan', continent: 'Asia', age: 35, language: 'HTML' },
+  { firstName: 'Sumayah', lastName: 'M.', country: 'Tajikistan', continent: 'Asia', age: 30, language: 'CSS' }
+];
+
+// list1.forEach(obj => {
+//   for(let keys in obj ) {
+//     console.log(obj[keys]);
+//     // if(obj[keys] = 'Europe')
+//     //   console.log(keys);
+//   }
+
+// });
 
 
 

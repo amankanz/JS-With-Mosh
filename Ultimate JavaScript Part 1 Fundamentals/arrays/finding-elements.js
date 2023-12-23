@@ -39,17 +39,19 @@ const courses = [
 // this function takes a parameter that's an element in the array.
 // in the body of the function we return a boolean
 // The find() method return the first element that matches our boolean criteria
-// const course = courses.find(function (course) {
-//   return course.name === 'a';
-// });
+const course = courses.find(function (course) {
+  return course.name === 'a';
+});
+
+console.log(course);
 
 
 // findIndex() Method
 // Instrad of returning the actual object, like the course object
 // it return its index
-const course = courses.findIndex(function (course) {
-  return course.name === 'a';
-});
+// const course = courses.findIndex(function (course) {
+//   return course.name === 'a';
+// });
 
-console.log(course);
+// console.log(course);
 
