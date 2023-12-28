@@ -47,7 +47,7 @@ console.log(course);
 
 
 // findIndex() Method
-// Instrad of returning the actual object, like the course object
+// Instead of returning the actual object, like the course object
 // it return its index
 // const course = courses.findIndex(function (course) {
 //   return course.name === 'a';
@@ -55,3 +55,74 @@ console.log(course);
 
 // console.log(course);
 
+// === CODEWARS Kata 4 ===
+
+/**
+ * You will be given an array of objects representing data about developers
+ *  who have signed up to attend the next coding meetup that you are 
+ * organising.
+ * write a function that when executed as 
+ * findAdmin(list1, 'JavaScript') returns only the JavaScript developers 
+ * who are GitHub admins
+ */
+
+const list1 = [
+  {
+    firstName: 'Harry',
+    lastName: 'K.',
+    country: 'Brazil',
+    continent: 'Americas',
+    age: 22,
+    language: 'JavaScript',
+    githubAdmin: 'yes'
+  },
+  {
+    firstName: 'Kseniya',
+    lastName: 'T.',
+    country: 'Belarus',
+    continent: 'Europe',
+    age: 49,
+    language: 'Ruby',
+    githubAdmin: 'no'
+  },
+  {
+    firstName: 'Jing',
+    lastName: 'X.',
+    country: 'China',
+    continent: 'Asia',
+    age: 34,
+    language: 'JavaScript',
+    githubAdmin: 'yes'
+  },
+  {
+    firstName: 'Piotr',
+    lastName: 'B.',
+    country: 'Poland',
+    continent: 'Europe',
+    age: 128,
+    language: 'JavaScript',
+    githubAdmin: 'no'
+  }
+];
+
+/**
+ * Pseudocode:
+ *  use the find() method to return only the obj
+ *  that matches our criteria
+ *  langauge: 'JavaScript' and githubAdmin: 'yes'  
+ */
+
+function findAdmin(list, lang) {
+  const dev = list.filter(dev => {
+    return dev.githubAdmin === 'yes' && dev.language === lang;
+  });
+  console.log(dev);
+}
+
+findAdmin(list1, 'JavaScript')
+
+// const findAdmin = (list, lang) => {
+//  console.log(list.filter(({language, githubAdmin}) => language === lang && githubAdmin === `yes`));
+// }
+
+// findAdmin(list1, 'JavScript');

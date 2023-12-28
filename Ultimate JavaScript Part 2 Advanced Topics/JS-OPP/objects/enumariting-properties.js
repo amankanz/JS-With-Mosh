@@ -36,13 +36,13 @@ const circle = new Circle(10);
  * called 'key()' we can pass our circle object as an argument
  * and this will return all the keys in the cirlce as an array, 
  */
-// const keys = Object.keys(circle);
+const keys = Object.keys(circle);
 
-// console.log(keys);
+console.log(keys);
 
 // Find out if an object has a given property use the 'in' operator
-if ('radius' in circle)
-  console.log('Circle has radius');
+// if ('radius' in circle)
+//   console.log('Circle has radius');
 
 /**
  * NB: To enumerate all the members of an object use the 'for in' loop.

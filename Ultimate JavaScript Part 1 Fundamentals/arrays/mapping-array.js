@@ -21,8 +21,7 @@ const filtered = numbers.filter(number => number >= 0);
 // console.log(html);
 
 // mapping to object
-// const items = filtered.map(number => ({value: number}));
-
+const items = filtered.map(number => ({value: number}));
 // console.log(items);
 
 // One lasting, both the filter() and map() method return an new array
@@ -50,4 +49,45 @@ function colourAssociation(array) {
   return array.map(element => ({[element[0]]: element[1]}));
 }
 
-console.log(colourAssociation(array));
+// console.log(colourAssociation(array));
+
+// === CODEWARS Kata 2 ==
+/**
+ * Coding Meetup #5 - Higher-Order Functions Series 
+ * - Prepare the count of languages
+ */
+
+// const list1 = [
+//   { firstName: 'Noah', lastName: 'M.', country: 'Switzerland', continent: 'Europe', age: 19, language: 'C' },
+//   { firstName: 'Anna', lastName: 'R.', country: 'Liechtenstein', continent: 'Europe', age: 52, language: 'JavaScript' },
+//   { firstName: 'Ramon', lastName: 'R.', country: 'Paraguay', continent: 'Americas', age: 29, language: 'Ruby' },
+//   { firstName: 'George', lastName: 'B.', country: 'England', continent: 'Europe', age: 81, language: 'C' },
+// ];
+
+
+// function countLangues(list) {
+//   const countJS = list.filter(dev => dev.language === 'JavaScript').length;
+//   const countRuby = list.filter(dev => dev.language === 'Ruby').length;
+//   const countC = list.filter(dev => dev.language === 'C').length;
+
+//   const obj = {};
+//   obj['C'] = countC;
+//   obj['JavaScript'] = countJS;
+//   obj['Ruby'] = countRuby;
+
+//   console.log(obj);
+// }
+
+// console.log(countJs);
+// console.log(countRuby);
+// console.log(countC);
+
+// countLangues(list1);
+
+// const countLanguages = list1.filter(numberLanguage => numberLanguage.language).length;
+
+// console.log(countLanguages);
+
+
+
+

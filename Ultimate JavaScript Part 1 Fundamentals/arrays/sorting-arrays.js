@@ -1,10 +1,10 @@
 
-// const numbers = [2, 3, 1];
+const numbers = [2, 3, 1];
 
 // sort() method convert each elemet inside the array
 // to a string then sorts the elements in the array
-// numbers.sort();
-// console.log(numbers);
+numbers.sort();
+console.log(numbers);
 
 // reverse() method
 // another method companion to the sort() method
@@ -41,4 +41,4 @@ courses.sort(function (a, b) {
   return 0;
 })
 
-console.log(courses);
+// console.log(courses);

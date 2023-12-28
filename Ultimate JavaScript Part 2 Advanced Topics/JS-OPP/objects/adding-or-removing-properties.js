@@ -27,7 +27,7 @@ const circle = new Circle(1);
 // Breaket Notation
 circle['location'] = { x: 1 }; // use a string to reference the property
 
-// console.log(circle);
+console.log(circle);
 
 /**
  * The dot-natation is simpler but the breaket notation
@@ -72,6 +72,6 @@ circle['location'] = { x: 1 }; // use a string to reference the property
  * we can use the dotnation or the breaket notation.
  */
 
-delete circle['location']; // use the breaket notation  
-console.log(circle);
+// delete circle['location']; // use the breaket notation  
+// console.log(circle);
 
